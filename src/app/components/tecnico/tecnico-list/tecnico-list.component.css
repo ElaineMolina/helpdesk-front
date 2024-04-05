@@ -8,17 +8,17 @@ table {
 }
 
 .mat-header-cell {
-  color: #582f0e;
+  color: #212529;
 }
 
 td {
-  background-color: #c2c5aa;
+  background-color: #f8f9fa;
 }
 
 th {
-  background-color: #b6ad90;
+  background-color: #e9ecef;
 }
 
 mat-paginator {
-  background-color: #a4ac86;
+  background-color: #e9ecef;
 }
