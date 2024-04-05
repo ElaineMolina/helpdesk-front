@@ -1,0 +1,17 @@
+.card {
+  width: 90%;
+  background-color: rgb(235, 235, 235);
+  margin: 1rem auto auto 2.75rem;
+  border-radius: 8px;
+
+}
+
+img  {
+  width: 30%;
+  height: 100%;
+  margin: 10px auto 20px auto ;
+}
+
+.mat-card-image {
+  border-radius: 8px;
+}
