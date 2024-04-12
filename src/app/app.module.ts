@@ -66,7 +66,7 @@ import { ToastrModule } from 'ngx-toastr';
     MatListModule,
     MatCardModule,
     ToastrModule.forRoot({
-      timeOut: 4000,
+      timeOut: 3000,
       closeButton: true,
       progressBar: true
     })
