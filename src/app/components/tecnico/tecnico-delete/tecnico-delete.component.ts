@@ -8,12 +8,11 @@ import { Tecnico } from '../../models/tecnico';
 import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
-  selector: 'app-tecnico-update',
-  templateUrl: './tecnico-update.component.html',
-  styleUrls: ['./tecnico-update.component.css']
+  selector: 'app-tecnico-delete',
+  templateUrl: './tecnico-delete.component.html',
+  styleUrls: ['./tecnico-delete.component.css']
 })
-export class TecnicoUpdateComponent implements OnInit {
-
+export class TecnicoDeleteComponent implements OnInit {
   tecnico: Tecnico = {
     id: '',
     nome: '',
@@ -23,11 +22,6 @@ export class TecnicoUpdateComponent implements OnInit {
     perfis: [],
     dataCriacao: ''
   }
-
-  nome: FormControl = new FormControl(null, Validators.minLength(3));
-  cpf: FormControl = new FormControl(null, Validators.required);
-  email: FormControl = new FormControl(null, Validators.email);
-  senha: FormControl = new FormControl(null, Validators.minLength(3));
 
   constructor(private service: TecnicoService,
     private toast: ToastrService,
@@ -46,9 +40,9 @@ export class TecnicoUpdateComponent implements OnInit {
       this.tecnico = resposta;
     })
   }
-  update(): void {
-    this.service.update(this.tecnico).subscribe(() => {
-      this.toast.success('Técnico atualizado com sucesso', 'Upda');
+  delete(): void {
+    this.service.delete(this.tecnico.id).subscribe(() => {
+      this.toast.success('Técnico deletado com sucesso', 'Delete');
       this.router.navigate(['tecnicos'])
     }, ex => {
       if(ex.error.errors) {
@@ -61,15 +55,5 @@ export class TecnicoUpdateComponent implements OnInit {
     })
   }
 
-  addPerfil(perfil: any): void {
-    if (this.tecnico.perfis.includes(perfil)) {
-      this.tecnico.perfis.splice(this.tecnico.perfis.indexOf(perfil), 1);
-    } else {
-      this.tecnico.perfis.push(perfil);
-    }
-  }
 
-  validaCampos(): boolean {
-    return this.nome.valid && this.cpf.valid && this.email.valid && this.senha.valid
-  }
 }
