@@ -1,0 +1,44 @@
+h1 {
+  width: 100%;
+  text-align: center;
+}
+
+button {
+  width: 100%;
+}
+
+mat-form-field {
+  width: 100%;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+table {
+  width: 100%;
+}
+
+.mat-header-cell {
+  color: #212529;
+}
+
+td {
+  background-color: #f8f9fa;
+}
+
+th {
+  background-color: #e9ecef;
+}
+
+mat-paginator {
+  background-color: #e9ecef;
+}
+.edit {
+  color: #343a40;
+}
+
+.delete {
+  color: #9b2226;
+}
