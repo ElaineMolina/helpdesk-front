@@ -3,6 +3,8 @@ import { Injectable } from '@angular/core';
 import { Chamado } from '../components/models/chamado';
 import { Observable } from 'rxjs';
 import { API_CONFIG } from '../config/api.config';
+import { ToastrService } from 'ngx-toastr';
+import { Router } from '@angular/router';
 
 @Injectable({
   providedIn: 'root'
@@ -16,4 +18,11 @@ export class ChamadoService {
   findAll(): Observable<Chamado[]> {
     return  this.http.get<Chamado[]>(`${API_CONFIG.baseUrl}/chamados`);
   }
+
+
+  create(chamado: Chamado): Observable<Chamado> {
+    return  this.http.post<Chamado>(`${API_CONFIG.baseUrl}/chamados`, chamado);
+  }
+
+
 }
