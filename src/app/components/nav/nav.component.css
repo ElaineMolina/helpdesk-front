@@ -3,15 +3,16 @@
 }
 
 .sidenav {
-  width: 13rem;
+  width: 12rem;
   color: white;
-  background: linear-gradient(180deg, rgba(248,249,250,1) 0%, rgba(233,236,239,1) 5%, rgba(222,226,230,1) 20%, rgba(206,212,218,1) 33%, rgba(173,181,189,1) 52%, rgba(108,117,125,1) 67%, rgba(73,80,87,1) 80%, rgba(52,58,64,1) 96%, rgba(33,37,41,1) 100%);
+  background: var(--background-color);
 }
 
 img{
-  width: 100%;
-  height: 12rem;
-  margin: auto  auto 1rem auto;
+  width: 70%;
+  height: 7rem;
+  margin: 1rem  auto auto 2rem;
+  border-radius: 6px;
 }
 
 .sidenav a {
@@ -25,5 +26,5 @@ img{
 .menu {
   margin: 1rem 0 0 1rem;
   color: #343a40;
-  background: linear-gradient(180deg, rgba(248,249,250,1) 0%, rgba(233,236,239,1) 5%, rgba(222,226,230,1) 20%, rgba(206,212,218,1) 33%, rgba(173,181,189,1) 52%, rgba(108,117,125,1) 67%, rgba(73,80,87,1) 80%, rgba(52,58,64,1) 96%, rgba(33,37,41,1) 100%);
+  background: var(--background-color);
 }

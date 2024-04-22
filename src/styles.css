@@ -1,5 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
 @import '~ngx-toastr/toastr.css';
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&display=swap');
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+:root {
+  --cor-um: #71090e;
+  --cor-dois: #003763;
+  --cor-tres: #00223d;
+  --cor-cinco: #ffffff;
+  --cor-seis: #ececea;
+  --cor-sete: #352d28;
+
+  --background-color:  linear-gradient(220deg, rgba(107,112,92,1) 7%, rgba(165,165,141,1) 23%, rgba(183,183,164,1) 49%, rgba(255,232,214,1) 85%);
+}

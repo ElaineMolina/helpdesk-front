@@ -5,6 +5,7 @@ h1 {
 
 button {
   width: 100%;
+  color: var(--cor-dois);
 }
 
 mat-form-field {
@@ -25,20 +26,21 @@ table {
 }
 
 td {
-  background-color: #f8f9fa;
+  background-color: var(--cor-cinco);
 }
 
 th {
-  background-color: #e9ecef;
+  background-color: var(--cor-seis)
 }
 
 mat-paginator {
-  background-color: #e9ecef;
+  background-color: var(--cor-seis)
 }
+
 .edit {
-  color: #343a40;
+  color: var(--cor-dois);
 }
 
 .delete {
-  color: #9b2226;
+  color: var(--cor-um);
 }

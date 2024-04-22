@@ -1,13 +1,13 @@
 .card {
   width: 90%;
-  background-color: #e9ecef;
+  background-color: var(--cor-seis);
   margin: 1rem auto auto 2rem;
   border-radius: 8px;
 
 }
 
 img  {
-  width: 30%;
+  width: 20%;
   height: 100%;
   margin: 10px auto 20px auto ;
 }
